@@ -15,4 +15,51 @@ int isEmpty()
 	{
 		return stack[top];
 		}
-		void 
+void push(int e)
+{
+	if(!isFull())
+	top++;
+	e=stack[top];
+	printf("Element %d successfully entered",e);
+}
+else
+{
+	printf("stack overflow");
+	}
+	void pop(){
+		int d;
+		if(!isEmpty())
+		{
+		d=stack[top];
+		top--;
+		printf("Element %d successfully entered",d);
+		}
+		else
+		{printf("stack underflow");
+			
+		}
+	int main()
+	{
+		
+	int choice,e;
+	do
+	printf("Enter your choice\n1.Peek\n2.Push\n3.Pop\n4.Exit\n");
+	scanf("%d",&choice);
+	switch(choice)
+	{
+		case 1:peek();
+		break;
+case 2:push();
+break;
+case 3:pop();
+break;
+case 4:exit();
+break;
+	
+		}
+		
+		
+		
+		
+		
+		
