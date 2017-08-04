@@ -15,8 +15,7 @@ typedef struct conversion
 	int priority(char);
 	
 	int main()
-	
-{
+	{
 	char infix[30],postfix[30];
 	printf("\nEnter Infix Expression\n");
 	scanf("%s",infix);
@@ -67,7 +66,7 @@ typedef struct conversion
 				post[j++]=pop(&s1);
 				post[j]='\0';
 			}
-priority			
+			
 						
 					
 					
